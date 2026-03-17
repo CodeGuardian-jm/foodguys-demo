@@ -1047,3 +1047,30 @@ border-radius: 12px;
     align-items: flex-start;
   }
 } 
+/* Mobile Navigation Display Logic */
+@media (max-width: 991px) {
+  .nav-toggle {
+    display: flex; /* Shows the hamburger button */
+  }
+
+  .nav {
+    display: none; /* Hides the desktop horizontal links */
+  }
+
+  .mobile-nav {
+    display: none; /* Hidden by default */
+    background-color: var(--color-footer-bg);
+    width: 100%;
+  }
+
+  .mobile-nav.open {
+    display: block; /* Shows when JS toggles the 'open' class */
+  }
+  
+  .mobile-nav-link {
+    display: block;
+    padding: var(--space-4);
+    color: white;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+}
