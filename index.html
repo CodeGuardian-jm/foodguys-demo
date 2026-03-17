@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Guys | Fresh & Delicious</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Fresh food delivered or enjoyed at our restaurant. Locally sourced produce, smoothies, and gourmet meals." />
+</head>
+<body>
+
+<!-- =========================
+     SITE HEADER & NAVIGATION
+     ========================= -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#home" class="brand">
+      <span class="brand-text">Food Guys</span>
+    </a>
+ 
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#modal-about" class="nav-link" data-modal="modal-about">About</a></li>
+        <li><a href="#modal-menu" class="nav-link" data-modal="modal-menu">Menu</a></li>
+        <li><a href="#modal-reviews" class="nav-link" data-modal="modal-reviews">Reviews</a></li>
+        <li><a href="#modal-order" class="nav-link" data-modal="modal-order">Order</a></li>
+      </ul>
+    </nav>
+
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span class="nav-toggle-line"></span>
+      <span class="nav-toggle-line"></span>
+      <span class="nav-toggle-line"></span>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <ul class="mobile-nav-list">
+      <li><a href="#home" class="mobile-nav-link">Home</a></li>
+      <li><a href="#modal-about" class="mobile-nav-link" data-modal="modal-about">About</a></li>
+      <li><a href="#modal-menu" class="mobile-nav-link" data-modal="modal-menu">Menu</a></li>
+      <li><a href="#modal-reviews" class="mobile-nav-link" data-modal="modal-reviews">Reviews</a></li>
+      <li><a href="#modal-order" class="mobile-nav-link" data-modal="modal-order">Order</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="home">
+  <section class="section hero">
+    <!-- Main hero content -->
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Fresh & Local</p>
+        <h1 class="hero-title">Delicious meals, smoothies, and more</h1>
+        <p class="hero-subtitle">
+          Sourced from our farm, prepared in-house, and delivered to your table or door.
+        </p>
+        <div class="hero-actions">
+          <a href="#modal-order" class="btn btn-primary" data-modal="modal-order">Order Now</a>
+          <a href="#modal-menu" class="btn btn-outline" data-modal="modal-menu">View Menu</a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+  <img src="assets/images/food.jpg" alt="Fresh meals and smoothies" class="hero-image">
+</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <!-- =========================
+       ABOUT MODAL
+       ========================= -->
+  <div id="modal-about" class="section-modal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close About Section">&times;</button>
+      <section class="section about">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">About Food Guys</h2>
+            <p class="section-intro">Fresh, local, and prepared with care.</p>
+          </div>
+          <div class="about-grid">
+            <div class="about-card">
+              <h3 class="about-card-title">Our Story</h3>
+              <p class="about-card-text">Founded decades ago, Food Guys has served our community with love and dedication.</p>
+            </div>
+            <div class="about-card">
+              <h3 class="about-card-title">Our Farm</h3>
+              <p class="about-card-text">We grow our own produce, raise livestock responsibly, and roast fresh ingredients ourselves.</p>
+            </div>
+            <div class="about-card">
+              <h3 class="about-card-title">Our Kitchen</h3>
+              <p class="about-card-text">Every dish is prepared fresh in-house by our chefs using quality ingredients.</p>
+            </div>
+            <div class="about-card">
+              <h3 class="about-card-title">Delivery & Pickup</h3>
+              <p class="about-card-text">Enjoy your meals in the restaurant or delivered straight to your door.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- =========================
+       MENU MODAL
+       ========================= -->
+  <div id="modal-menu" class="section-modal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close Menu Section">&times;</button>
+      <section class="section services">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Our Menu</h2>
+            <p class="section-intro">Explore our fresh dishes and smoothies.</p>
+          </div>
+<div class="menu-grid">
+
+  <div class="menu-card">
+    <img src="assets/images/food.jpg" alt="Green Smoothie">
+    <div class="menu-card-body">
+      <h3>Green Smoothie</h3>
+      <p>Spinach, kale, banana, and fresh apple juice.</p>
+      <span class="menu-price">$6.50</span>
+    </div>
+  </div>
+
+  <div class="menu-card">
+    <img src="assets/images/food.jpg" alt="Berry Blast">
+    <div class="menu-card-body">
+      <h3>Berry Blast</h3>
+      <p>Strawberries, blueberries, and Greek yogurt.</p>
+      <span class="menu-price">$6.75</span>
+    </div>
+  </div>
+
+  <div class="menu-card">
+    <img src="assets/images/food.jpg" alt="Avocado Toast">
+    <div class="menu-card-body">
+      <h3>Avocado Toast</h3>
+      <p>Whole grain toast topped with ripe avocado and spices.</p>
+      <span class="menu-price">$7.50</span>
+    </div>
+  </div>
+
+  <div class="menu-card">
+    <img src="assets/images/food.jpg" alt="Grilled Chicken Salad">
+    <div class="menu-card-body">
+      <h3>Grilled Chicken Salad</h3>
+      <p>Fresh greens, grilled chicken, and house vinaigrette.</p>
+      <span class="menu-price">$9.50</span>
+    </div>
+  </div>
+
+  <div class="menu-card">
+    <img src="assets/images/food.jpg" alt="Acai Bowl">
+    <div class="menu-card-body">
+      <h3>Acai Bowl</h3>
+      <p>Acai puree, granola, and fresh seasonal fruit.</p>
+      <span class="menu-price">$8.00</span>
+    </div>
+  </div>
+
+  <div class="menu-card">
+    <img src="assets/images/food.jpg" alt="Soup of the Day">
+    <div class="menu-card-body">
+      <h3>Hot Soup of the Day</h3>
+      <p>Ask our staff about today's freshly prepared soup.</p>
+      <span class="menu-price">$5.00</span>
+    </div>
+  </div>
+
+</div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- =========================
+       REVIEWS MODAL
+       ========================= -->
+  <div id="modal-reviews" class="section-modal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close Reviews Section">&times;</button>
+      <section class="section about">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Customer Reviews</h2>
+            <p class="section-intro">What our happy customers say about us.</p>
+          </div>
+          <div class="about-grid">
+            <div class="about-card">
+              <p class="about-card-text">"The smoothies are amazing and always fresh!" — Sarah W.</p>
+            </div>
+            <div class="about-card">
+              <p class="about-card-text">"Loved the farm-to-table experience at the restaurant." — Mark P.</p>
+            </div>
+            <div class="about-card">
+              <p class="about-card-text">"Fast delivery and delicious food every time!" — Lisa M.</p>
+            </div>
+            <div class="about-card">
+              <p class="about-card-text">"Highly recommend the Acai Bowl!" — Tony R.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- =========================
+       ORDER MODAL
+       ========================= -->
+  <div id="modal-order" class="section-modal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close Order Section">&times;</button>
+      <section class="section contact">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Place Your Order</h2>
+            <p class="section-intro">Fill out the form and we'll prepare your meal for pickup or delivery.</p>
+          </div>
+          <form class="contact-form" action="#" method="post">
+            <div class="form-group">
+              <label for="name">Name*</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email*</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="order">Order Details*</label>
+              <textarea id="order" name="order" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="pickup">Pickup or Delivery</label>
+              <select id="pickup" name="pickup">
+                <option value="pickup">Pickup</option>
+                <option value="delivery">Delivery</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Order</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; <span id="year"></span> Food Guys. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
