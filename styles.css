@@ -302,12 +302,22 @@ textarea {
 /* =========================================
    HEADER & NAVIGATION
    ========================================= */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+
 
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 4000;
-background-color: var(--color-footer-bg); /* match footer bg */
+  z-index: 99999;
+background: red !important;
   color: var(--color-footer-text); /* match footer text */
   backdrop-filter: none; /* remove blur for consistency */
   border-bottom: none; /* remove border to match footer */
@@ -446,6 +456,7 @@ background-color: var(--color-footer-bg); /* match footer bg */
   padding-top: var(--space-12);
   padding-bottom: var(--space-12);
   z-index: 1;
+  pointer-events: auto;
 }
 
 .hero::before {
@@ -456,8 +467,7 @@ background-color: var(--color-footer-bg); /* match footer bg */
               radial-gradient(circle at 80% 70%, rgba(255, 201, 150, 0.866), transparent 70%);
   animation: pulseBackground 6s infinite alternate ease-in-out, moveBackground 12s infinite linear;
   z-index: 0;
-  pointer-events: none; /* buttons stay clickable */
-}
+  pointer-events: none !important;
 
 @keyframes pulseBackground {
   0%   { transform: scale(1); opacity: 0.7; }
