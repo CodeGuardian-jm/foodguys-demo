@@ -71,11 +71,22 @@ h1, h2, h3, h4, h5 {
   display: none; /* hidden by default */
   align-items: center;
   justify-content: center;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(255,0,0,0.2);
   z-index: 100;
   padding: var(--space-4);
   overflow-y: auto;
   transition: opacity var(--transition-base) ease-in-out;
+   opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  z-index: 1000; /* BELOW header/nav */
+}
+ .section-modal.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  z-index: 5000; /* ABOVE everything when open */
 }
 
 .section-modal.active {
@@ -295,7 +306,7 @@ textarea {
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 50;
+  z-index: 4000;
 background-color: var(--color-footer-bg); /* match footer bg */
   color: var(--color-footer-text); /* match footer text */
   backdrop-filter: none; /* remove blur for consistency */
